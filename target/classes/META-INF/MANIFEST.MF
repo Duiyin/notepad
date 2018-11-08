@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Implementation-Title: notepad
 Implementation-Version: latest
-Built-By: zz
+Built-By: Tinghan
 Implementation-Vendor-Id: com.tinghan
 Build-Jdk: 1.8.0_111
 Implementation-URL: http://projects.spring.io/spring-boot/notepad/
