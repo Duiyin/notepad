@@ -3,28 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/info.css}">
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
 </head>
 <body>
-	<table class="table table-hover">
-		<tr>
-			<th>序号</th>
-			<th>标题</th>
-			<th>操作</th>
-			<th>时间</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<td>11111</td>
-			<td>查看</td>
-			<td>20181106</td>
-		</tr>
-		<tr>
-			<td>1</td>
-			<td>11111</td>
-			<td>查看</td>
-			<td>20181106</td>
-		</tr>
-	</table>
+	<div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">记事本</h3>
+			</div>
+			<div>
+				<table class="table  table-bordered table-hover">
+					<tr>
+						<td>序号</td>
+						<td>标题</td>
+						<td>简介</td>
+						<td>作者</td>
+						<td>操作</td>
+						<td>时间</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>这是标题</td>
+						<td>这是文章大概</td>
+						<td>林听寒</td>
+						<td><a>查看</a></td>
+						<td>2018-11-08</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
 </body>
 <script type="text/javascript" th:src="@{/js/jquery-3.2.1.min.js}"></script>
 <script th:src="@{/js/bootstrap.min.js}"></script>
