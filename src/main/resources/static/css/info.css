@@ -1,11 +1,11 @@
 body {
-	width:100%;
-	text-align:center;
-	margin:auto;
-	padding:0px 70px 0px 70px;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	padding: 0px 70px 0px 70px;
 }
 
-.panel-title{
+.panel-title {
 	font-size: 20px;
 	font-weight: bold;
 	text-align: left;
@@ -18,12 +18,12 @@ body {
 
 .rectangle {
 	position: absolute;
-	width: 1200px;
+	width: 800px;
 	height: auto;
 	margin: 20px auto;
 	border: solid #000000;
 	border-width: 1px;
-} 
+}
 
 .headimg {
 	position: relative;
@@ -33,3 +33,30 @@ body {
 	margin: 5px;
 }
 
+.nickname {
+	position: relative;
+	width: auto;
+	height: auto;
+	font-size: 30px;
+	font-weight: bold;
+	float: left;
+	padding: 10px;
+	margin-top: 90px;
+}
+
+.personality {
+	font-size: 10px;
+}
+
+.pesonal-info {
+	font-size: 20px;
+	margin-top: 200px;
+	float: left;
+}
+
+.personal-body {
+	width: auto;
+	height: auto;
+	text-align: left;
+	margin-top: 40px;
+}
