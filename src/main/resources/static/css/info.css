@@ -16,20 +16,24 @@ body {
 	font-weight: bold;
 }
 
-.rectangle {
-	position: absolute;
-	width: 1200px;
-	height: auto;
-	margin: 20px auto;
-	border: solid #000000;
-	border-width: 1px;
-} 
+.personal-text-size {
+	size:20px;
+}
 
 .headimg {
 	position: relative;
-	width: 180px;
-	height: 180px;
-	float: right;
-	margin: 5px;
+	width: 150px;
+	height: 150px;
 }
 
+.personal-data {
+	margin-top: 10px;
+}
+
+.personal-data-li {
+	margin-top: 15px;
+}
+
+.setting-button-one {
+	float: right;
+}

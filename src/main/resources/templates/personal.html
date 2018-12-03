@@ -7,11 +7,80 @@
 <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
 </head>
 <body>
-	<div class="personal-body">
-		<div class="rectangle">
-			<img class="headimg" th:src="@{/images/default_head.png}" alt="头像"/>
-		</div>
+	<div class="overall container-fluid">
+		<!-- 导航条 start -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class=" navbar-header">
+					<a class="navbar-brand" th:href="@{/}">Blue Bird</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+				        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BB setting<span class="caret"></span></a>
+				          	<ul class="dropdown-menu">
+					          	<li><a th:href="@{/personal}">个人主页 Personal</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">登出 Login out</a></li>
+					        </ul>
+				        </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- 导航条 end -->
 		
+		<!-- 个人资料面板 start -->
+		<div class="panel panel-info container-fluid">
+			<div class="panel-heading row">
+				<b>Personal Data</b>
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-default btn-group-xs">编辑</button>
+				</div>
+		  	</div>
+		  	
+		  	<div class="personal-data row">
+			  	<div class="panel-body col-xs-2">
+			  		<img class="headimg" th:src="@{/images/default_head.png}" alt="头像"/>
+			  	</div>
+		  		
+		  		<div class="personal-data-li">
+			  		<div class="col-xs-4">
+					  	<div class="input-group col-xs-10">
+			  				<span class="input-group-addon" id="sizing-addon2">昵称</span>
+			  				<input type="text" class="form-control" placeholder="好听显品味呢" aria-describedby="sizing-addon2">
+						</div><br/>
+						<div class="input-group col-xs-10">
+			  				<span class="input-group-addon" id="sizing-addon2">签名</span>
+			  				<input type="text" class="form-control" placeholder="来描述自己吧" aria-describedby="sizing-addon2">
+						</div><br/>
+						<div class="input-group col-xs-10">
+			  				<span class="input-group-addon" id="sizing-addon2">邮箱</span>
+			  				<input type="text" class="form-control" placeholder="绑定不会丢哦" aria-describedby="sizing-addon2">
+						</div><br/>
+					</div>
+					<div class="col-xs-4">
+						<div class="input-group col-xs-10">
+			  				<span class="input-group-addon" id="sizing-addon2">登录账号</span>
+			  				<input type="text" disabled="disabled" class="form-control" placeholder="不可更改呢" aria-describedby="sizing-addon2">
+						</div><br/>
+						
+						<div class="input-group col-xs-10">
+			  				<span class="input-group-addon" id="sizing-addon2">唯一标识</span>
+			  				<input type="text" disabled="disabled" class="form-control" placeholder="身份标识哦" aria-describedby="sizing-addon2">
+						</div><br/>
+						
+						<div class="input-group col-xs-10">
+			  				<span class="input-group-addon" id="sizing-addon2">加入时间</span>
+			  				<input type="text" disabled="disabled" class="form-control" placeholder="算是生日呀" aria-describedby="sizing-addon2">
+						</div><br/>
+					</div>
+				</div>
+		  	</div>
+		</div>
+		<!-- 个人资料面板 end -->
+	</div>
+	
 		<text>林听寒</text>
 		<text>我的路我自己走</text>
 		<text>创建时间</text>
