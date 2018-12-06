@@ -1,21 +1,11 @@
 package com.tinghan.notepad.domain;
 
-import java.sql.Timestamp;
-
-import com.tinghan.notepad.util.ID;
-import com.tinghan.notepad.util.Time;
-
-public class User {
-
-	private String id;
-
+public class RegisterDto {
+	
 	private String account;
 
 	private String password;
-
-	private Timestamp createtime;
-
-	// 以下为个人信息↓
+	
 	private String headimgs; // 头像
 
 	private String nickname; // 昵称
@@ -23,26 +13,6 @@ public class User {
 	private String autograph; // 个性签名
 
 	private String email;
-
-	private String idcard; // 标识符-编号
-
-	public User() {
-		this.id = ID.uuid();
-		this.idcard = ID.Intercept();
-		this.createtime = Time.timestamp();
-		this.headimgs = "/images/default_head.png";
-		this.nickname = idcard;
-		this.autograph = "此人较懒，暂无信息";
-		this.email = "保密";
-	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
 
 	public String getAccount() {
 		return account;
@@ -58,14 +28,6 @@ public class User {
 
 	public void setPassword(String password) {
 		this.password = password;
-	}
-
-	public Timestamp getCreatetime() {
-		return createtime;
-	}
-
-	public void setCreatetime(Timestamp createtime) {
-		this.createtime = createtime;
 	}
 
 	public String getHeadimgs() {
@@ -98,13 +60,5 @@ public class User {
 
 	public void setEmail(String email) {
 		this.email = email;
-	}
-
-	public String getIdcard() {
-		return idcard;
-	}
-
-	public void setIdcard(String idcard) {
-		this.idcard = idcard;
 	}
 }

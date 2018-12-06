@@ -5,6 +5,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/static"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/mapper"/>
         <property name="java-output-path" value="/notepad/target/classes"/>
         <property name="context-root" value="notepad"/>
     </wb-module>
