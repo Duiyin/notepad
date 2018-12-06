@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form th:action="@{/register}"  method="post" th:object="${registerDto}" class="container offset1 loginform">
+                <div id="owl-login">
+                    <div class="hand"></div>
+                    <div class="hand hand-r"></div>
+                    <div class="arms">
+                        <div class="arm"></div>
+                        <div class="arm arm-r"></div>
+                    </div>
+                </div>
+                <div class="pad">
+                    <input type="hidden" name="_csrf" value="">
+                    <div class="control-group">
+                        <div class="controls">
+                            <label for="account" class="control-label fa fa-user"></label>
+                            <input id="account" type="text" th:field="*{account}" placeholder="输入用户名" tabindex="1" autofocus="autofocus" class="form-control input-medium">
+                            <span class="error" th:if="${#fields.hasErrors('account')}" th:errors="*{account}">账号已被使用</span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <label for="npassword" class="control-label fa fa-lock"></label>
+                            <input id="npassword" type="password" th:field="*{npassword}" placeholder="输入6至16位密码" tabindex="2" class="form-control input-medium">
+                            <span class="error" th:if="${#fields.hasErrors('npassword')}" th:errors="*{npassword}">输入正确的密码</span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <label for="cpassword" class="control-label fa fa-key"></label>
+                            <input id="cpassword" type="password" th:field="*{cpassword}" placeholder="确认密码" tabindex="3" class="form-control input-medium">
+                            <span class="error" th:if="${#fields.hasErrors('cpassword')}" th:errors="*{cpassword}">输入正确的密码</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="form-actions"><a th:href="@{/login}" tabindex="8" class="btn btn-link text-muted">Sign In</a>
+                    <button id="btn_register" type="submit" tabindex="7" class="btn btn-primary">确定注册</button>
+                </div>
+            </form>
+</body>
+</html>
