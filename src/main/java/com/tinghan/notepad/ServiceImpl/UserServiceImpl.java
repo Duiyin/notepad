@@ -15,7 +15,7 @@ public class UserServiceImpl implements UserService{
 	private UserMapper userMapper;
 
 	@Override
-	public User createById(RegisterDto registerDto) {
+	public void createById(RegisterDto registerDto) {
 		
 		User user = new User();
 		//先查是否重号，不重号则创建
@@ -24,7 +24,6 @@ public class UserServiceImpl implements UserService{
 		user.setPassword(registerDto.getPassword());
 		// TODO Auto-generated method stub
 		userMapper.createById(user);
-		return null;
 	}
 
 }
