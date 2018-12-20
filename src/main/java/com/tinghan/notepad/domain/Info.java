@@ -13,20 +13,20 @@ public class Info {
 
 	@Id
 	private String id;
-	
+
 	private String userid;
-	
+
 	private String title;
-	
+
 	private String mainbody;
-	
+
 	private String author;
-	
+
 	private Timestamp createtime;
-	
+
 	private Timestamp endtime;
-	
-	public Info(){
+
+	public Info() {
 		this.id = ID.uuid();
 		this.createtime = Time.timestamp();
 	}

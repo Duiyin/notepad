@@ -2,11 +2,16 @@ package com.tinghan.notepad.domain;
 
 import java.sql.Timestamp;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 import com.tinghan.notepad.util.ID;
 import com.tinghan.notepad.util.Time;
 
+@Entity
 public class User {
 
+	@Id
 	private String id;
 
 	private String account;
