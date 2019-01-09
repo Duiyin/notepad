@@ -1,6 +1,6 @@
 package com.tinghan.notepad.domain;
 
-public class RegisterDto {
+public class UserDto {
 	
 	private String account;
 

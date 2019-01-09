@@ -2,10 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>register</title>
+<title>login</title>
 </head>
 <body>
-	<form th:action="@{/register}" method="post">
+	<form th:action="@{/login}" method="post">
 		<div>
 			<div>
 				<input name="account" type="text" placeholder="输入用户名" tabindex="1" autofocus="autofocus">
@@ -15,16 +15,13 @@
 			<div class="controls">
 				<input name="password" type="password" placeholder="输入6至16位密码" tabindex="2">
 			</div>
-			<div class="controls">
-				<input name="password" type="password" placeholder="再次输入密码" tabindex="3">
-			</div>
 		</div>
 		<div>
-			<button id="btn_register" type="submit" tabindex="4">Sign up</button>
+			<button id="btn_login" type="submit" tabindex="3">Sign In</button>
 		</div>
 	</form>
 	<div>
-		<button type="submit" tabindex="5"><a th:href="@{/login}">Sign in</a></button>
+		<button type="submit" tabindex="4"><a th:href="@{/register}">Sign up</a></button>
 	</div>
 </body>
 </html>
