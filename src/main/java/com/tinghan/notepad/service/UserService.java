@@ -19,6 +19,7 @@ public class UserService {
 	
 	public void register(UserDto userDto){
 		User user = new User();
+		User repeat = userDao.getOneById(userDto.getAccount());
 		BeanUtils.copyProperties(userDto, user, User.class);
 		userDao.save(user);
 	}

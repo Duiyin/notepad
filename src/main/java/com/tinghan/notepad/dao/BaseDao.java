@@ -1,9 +1,13 @@
 package com.tinghan.notepad.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import org.hibernate.Criteria;
 import org.hibernate.Session;
+import org.hibernate.criterion.DetachedCriteria;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,5 +20,10 @@ public class BaseDao<T> {
 
 	public Session getSession() {
 		return entityManager.unwrap(Session.class);
+	}
+	
+	public List<T> findAllByCriteria(final DetachedCriteria detachedCriteria) {
+		Criteria criteria = detachedCriteria.getExecutableCriteria(getSession());
+		return criteria.list();
 	}
 }
